@@ -7,14 +7,7 @@ const Message = mongoose.model(
     content: { type: String, required: true, minlength: 3, maxlength: 255 },
     createdAt: { type: Date, default: Date.now, once: true },
     updatedAt: { type: Date, default: Date.now },
-    replies_id: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Reply'
-    },
-    user_id: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'User'
-    }
+    replies: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Reply' }]
   })
 );
 

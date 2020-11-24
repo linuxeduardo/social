@@ -9,13 +9,14 @@ router.get('/', async (req, res) => {
 });
 
 // POST message registration
-router.post('/', async (req, res) => {
+router.post('/:id', async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
   let message = new Message({
     content: req.body.content
   });
+
   const result = await message.save();
   res.send(result);
 });

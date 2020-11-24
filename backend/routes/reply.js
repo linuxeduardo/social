@@ -14,16 +14,15 @@ router.post('/:id', async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].reply);
 
-  const message = await Message.findById(req.params.id);
-  if (!message) return res.status(404).send('Mensagem não encontrada.');
-  // FIXME:
-
   let reply = new Reply({
-    content: req.body.content,
-    message_id: message._id
+    content: req.body.content
   });
-  const result = await reply.save();
-  res.send(result);
+
+  let savedReply = await reply.save();
+  let message = await Message.findById(req.params.id);
+
+  message.replies.push(savedReply._id);
+  res.send(message);
 });
 
 // PUT

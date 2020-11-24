@@ -5,8 +5,8 @@ POST http://localhost:8080/api/users HTTP/1.1
 content-type: application/json
 
 {
-    "name": "akika",
-    "email": "akika@ailcomc.om",
+    "name": "tony",
+    "email": "tony@ailcomc.om",
     "password": "123"
 }
 ###
@@ -22,13 +22,13 @@ content-type: application/json
 ###
 DELETE http://localhost:8080/api/users/5fbd006e66cb2b3d7001eaf3 HTTP/1.1
 
-# TODO:
+# TODO: # TODO: # TODO: # TODO: # TODO: # TODO: # TODO: # TODO:
 ###
 GET http://localhost:8080/api/messages HTTP/1.1
 
 ###
 
-POST http://localhost:8080/api/messages HTTP/1.1
+POST http://localhost:8080/api/messages/5fbd41473de88b372cbeb11e HTTP/1.1
 content-type: application/json
 
 {
@@ -46,7 +46,7 @@ content-type: application/json
 ###
 DELETE http://localhost:8080/api/messages/5fbd08fd9316d93280baa50b HTTP/1.1
 
-# TODO:
+# TODO: # TODO: # TODO: # TODO: # TODO: # TODO: # TODO: # TODO:
 ###
 GET http://localhost:8080/api/reply HTTP/1.1
 
