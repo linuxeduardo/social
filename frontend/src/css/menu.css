@@ -1,0 +1,9 @@
+.Menu {
+  background-color: blanchedalmond;
+  display: flex;
+  height: 100vh;
+  position: fixed;
+}
+.Menu ul {
+  align-self: center;
+}

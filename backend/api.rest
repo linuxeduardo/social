@@ -1,0 +1,71 @@
+GET http://localhost:8080/api/users HTTP/1.1
+
+###
+POST http://localhost:8080/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "akika",
+    "email": "akika@ailcomc.om",
+    "password": "123"
+}
+###
+PUT http://localhost:8080/api/users/5fbd0011d890c81fcce6bf9f HTTP/1.1
+content-type: application/json
+
+{
+    "name": "akil",
+    "email": "akil@gmail.com",
+    "password": "123"
+}
+
+###
+DELETE http://localhost:8080/api/users/5fbd006e66cb2b3d7001eaf3 HTTP/1.1
+
+# TODO:
+###
+GET http://localhost:8080/api/messages HTTP/1.1
+
+###
+
+POST http://localhost:8080/api/messages HTTP/1.1
+content-type: application/json
+
+{
+    "content": "bye3!!"
+}
+
+###
+PUT http://localhost:8080/api/messages/5fbd08fe9316d93280baa50d HTTP/1.1
+content-type: application/json
+
+{
+    "content": "oi!!2"
+}
+
+###
+DELETE http://localhost:8080/api/messages/5fbd08fd9316d93280baa50b HTTP/1.1
+
+# TODO:
+###
+GET http://localhost:8080/api/reply HTTP/1.1
+
+###
+
+POST http://localhost:8080/api/reply/5fbd0ddf7cbb1231e0c14adb HTTP/1.1
+content-type: application/json
+
+{
+    "content": "hi hi hi2!!"
+}
+
+###
+PUT http://localhost:8080/api/reply/5fbd0a7e9e31543eb46e7ec9 HTTP/1.1
+content-type: application/json
+
+{
+    "content": "oi oi oi!!2"
+}
+
+###
+DELETE http://localhost:8080/api/reply/5fbd10ccb031e42b1009ad4f HTTP/1.1
