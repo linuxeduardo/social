@@ -1,21 +1,28 @@
+require('dotenv').config();
+const error = require('./middleware/error');
+const config = require('config');
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const morgan = require('morgan');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const messagesRouter = require('./routes/message');
 const replyRouter = require('./routes/reply');
-
+const auth = require('./routes/auth');
 const app = express();
+
+if (!config.get('jwtPrivateKey')) {
+  console.log('FATAL ERROR: jwtPrivateKey is not defined.');
+  process.exit(1);
+}
 
 const mongoose = require('mongoose');
 
 // mongoose connect
 mongoose
-  .connect('mongodb://localhost/mess', {
+  .connect('mongodb://localhost/messa', {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
@@ -31,14 +38,14 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(morgan('tiny'));
+app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/messages', messagesRouter);
 app.use('/api/reply', replyRouter);
+app.use('/api/auth', auth);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -55,5 +62,7 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.use(error);
 
 module.exports = app;

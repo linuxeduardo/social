@@ -1,6 +1,9 @@
+const bc = require('bcrypt');
 const express = require('express');
 const router = express.Router();
 const { User, validate } = require('../models/user');
+const _ = require('lodash');
+const auth = require('../middleware/auth');
 
 /* GET users listing. */
 router.get('/', async (req, res) => {
@@ -8,19 +11,30 @@ router.get('/', async (req, res) => {
   res.send(users);
 });
 
+// getting current user
+router.get('/me', auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select('-password');
+  res.send(user);
+});
+
 // POST user registration
 router.post('/', async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  let user = new User({
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password,
-    birth: req.body.birth
-  });
+  let user = await User.findOne({ email: req.body.email });
+  if (user) return res.status(400).send('Usuário já registrado.');
+
+  user = new User(_.pick(req.body, ['name', 'email', 'password']));
+
+  const salt = await bc.genSalt(parseInt(process.env.SALT, 10));
+  user.password = await bc.hash(user.password, salt);
   await user.save();
-  res.send(user);
+
+  const token = user.generateAuthToken();
+  res
+    .header('x-auth-token', token)
+    .send(_.pick(user, ['_id', 'name', 'email']));
 });
 
 // PUT

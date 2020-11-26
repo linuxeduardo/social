@@ -6,13 +6,15 @@ const Reply = mongoose.model(
   new mongoose.Schema({
     content: { type: String, required: true, minlength: 3, maxlength: 255 },
     createdAt: { type: Date, default: Date.now, once: true },
-    updatedAt: { type: Date, default: Date.now }
+    updatedAt: { type: Date, default: Date.now },
+    userId: { type: String, required: true }
   })
 );
 
 function validateReply(reply) {
   const schema = Joi.object({
-    content: Joi.string().min(3).max(255).required()
+    content: Joi.string().min(3).max(255).required(),
+    userId: Joi.objectId()
   });
   return schema.validate(reply);
 }

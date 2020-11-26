@@ -11,17 +11,20 @@ router.get('/', async (req, res) => {
 
 // POST reply
 router.post('/:id', async (req, res) => {
+  console.log(req.body);
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].reply);
 
-  let reply = new Reply({
-    content: req.body.content
+  const reply = new Reply({
+    content: req.body.content,
+    userId: req.body.userId
   });
 
-  let savedReply = await reply.save();
+  const savedReply = await reply.save();
   let message = await Message.findById(req.params.id);
-
   message.replies.push(savedReply._id);
+
+  await message.save();
   res.send(message);
 });
 
