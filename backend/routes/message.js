@@ -6,23 +6,15 @@ const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
 
 /* GET messages */
-router.get('/', async (req, res, next) => {
-  try {
-    const messages = await Message.find();
-    res.send(messages);
-  } catch (ex) {
-    next(ex);
-  }
+router.get('/', async (req, res) => {
+  const messages = await Message.find();
+  res.send(messages);
 });
 
 /* GET by ID */
 router.get('/:id', async (req, res) => {
-  try {
-    const message = await await Message.findOne({ _id: req.params.id });
-    if (!message) return res.status(404).send('Mensagem não encontrada.');
-  } catch (ex) {
-    res.status(500).send('Something failed.');
-  }
+  const message = await await Message.findOne({ _id: req.params.id });
+  if (!message) return res.status(404).send('Mensagem não encontrada.');
 
   res.send(message);
 });

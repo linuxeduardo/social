@@ -1,5 +1,5 @@
-# getting current user
-
+# TODO: verificar headers token
+# TODO: verificar express-async-errors
 ###
 GET http://localhost:8000/api/users HTTP/1.1
 
@@ -43,21 +43,20 @@ DELETE http://localhost:8000/api/users/5fbd006e66cb2b3d7001eaf3 HTTP/1.1
 GET http://localhost:8000/api/messages HTTP/1.1
 
 ### get by id
-GET http://localhost:8000/api/messages/5fbd55351fd54a39043510a8 HTTP/1.1
+GET http://localhost:8000/api/messages/5fbedeb54f4d6e3a8848cce2 HTTP/1.1
 
 ### new message
-POST http://localhost:8000/api/messages/5fbedeb54f4d6e3a8848cce2 HTTP/1.1
+POST http://localhost:8000/api/messages HTTP/1.1
 content-type: application/json
 
 {
-    "content": "new message 2 !!",
+    "content": "async !!",
     "userId": "5fbedae47cd36108180346c2"
 }
 
 ### POST with middleware
 POST http://localhost:8000/api/messages HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmJmYWUzODFmNDkxZTM1Yzg1OWU0ZGIiLCJpYXQiOjE2MDYzOTg5Njl9.DxIIbTvamOAO0e2icW0UrN_Gv-dSia1YhI_bHe0L40U
 
 {
     "content": "oioi",
