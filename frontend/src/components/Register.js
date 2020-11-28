@@ -1,20 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const Register = () => {
   return (
-    <div>
+    <div className='login'>
       <div>
-        <h3>Register</h3>
-        <div>
-          <label>username</label>
-          <input type='text' />
-          <label>email</label>
-          <input type='email' />
-          <label>data de nascimento</label>
-          <input type='date' />
-          <label>password</label>
-          <input type='text' />
-          <button>Registrar</button>
+        <Logo />
+        <div className='login-grid'>
+          <div>
+            <h3 className='subtitle'>Registro</h3>
+            <div className='form-group'>
+              <label>name</label>
+              <input placeholder='name' type='text' />
+            </div>
+            <div className='form-group'>
+              <label>email</label>
+              <input placeholder='email' type='email' />
+            </div>
+            <div className='form-group'>
+              <label>password</label>
+              <input placeholder='password' type='text' />
+            </div>
+            <button className='button-red button'>Registrar</button>
+            <div className='align-to-left'>
+              <Link className='link-to' to='login'>
+                Login
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

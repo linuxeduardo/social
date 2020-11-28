@@ -1,5 +1,81 @@
 .App {
+  display: grid;
+  flex-direction: row;
+  padding: 1rem;
 }
-.Main {
-  margin-left: 65px;
+@media only screen and (max-width: 600px) {
+  .App {
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .App {
+    grid-template-columns: 30% 70%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .App {
+    grid-template-columns: 20% 80%;
+  }
+}
+.social-subtitle {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 16px;
+  color: #f1f6f9;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 22px;
+}
+.label,
+.subtitle {
+  color: #284f78;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-top: 1.25rem;
+}
+
+.button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+}
+
+.button-red {
+  color: #ecf0f1;
+  background: #e74c3c;
+}
+
+.button-blue {
+  color: #ecf0f1;
+  background: #3498db;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+.link-to {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.logo {
+  text-align: center;
 }

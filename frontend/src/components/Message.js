@@ -1,17 +1,18 @@
 import React from 'react';
-import '../css/message.css';
 
-const Message = () => {
+const Messages = () => {
   return (
     <div className='message'>
-      <div>username</div>
-      <h4>Title</h4>
-      <p>
-        The 'Colossus' received a last-minute invitation following the North
-        American team's withdrawal.
-      </p>
+      <div className='content'>
+        <p className='message-modal-username'>username</p>
+        <p>
+          You may have to restart VS Code for the change to take effect. P.S. If
+          you're not doing this mapping for a React.js project, then answer
+          should probably work for you.
+        </p>
+      </div>
     </div>
   );
 };
 
-export default Message;
+export default Messages;

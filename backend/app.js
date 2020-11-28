@@ -1,5 +1,6 @@
 require('dotenv').config();
 require('express-async-errors');
+const winston = require('winston');
 const error = require('./middleware/error');
 const config = require('config');
 const createError = require('http-errors');
@@ -14,6 +15,8 @@ const replyRouter = require('./routes/reply');
 const auth = require('./routes/auth');
 const app = express();
 
+// winston.add(winston.transports.File, { filename: 'logfile.log' });
+// TODO: adicionar winton
 if (!config.get('jwtPrivateKey')) {
   console.log('FATAL ERROR: jwtPrivateKey is not defined.');
   process.exit(1);

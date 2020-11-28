@@ -1,5 +1,5 @@
 import React from 'react';
-import Message from './Message';
+import Messages from './Messages';
 import MessageModal from './MessageModal';
 
 const Home = () => {
@@ -7,9 +7,7 @@ const Home = () => {
     <div>
       <h3>Home</h3>
       <MessageModal />
-      <Message />
-      <Message />
-      <Message />
+      <Messages />
     </div>
   );
 };

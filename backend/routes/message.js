@@ -7,6 +7,7 @@ const admin = require('../middleware/admin');
 
 /* GET messages */
 router.get('/', async (req, res) => {
+  throw new Error('Errororororr..');
   const messages = await Message.find();
   res.send(messages);
 });

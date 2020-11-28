@@ -7,6 +7,8 @@ import './css/main.css';
 import './css/modal.css';
 import './css/menu.css';
 import './css/app.css';
+import './css/message.css';
+import './css/profile.css';
 
 ReactDOM.render(
   <React.StrictMode>

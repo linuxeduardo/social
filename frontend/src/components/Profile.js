@@ -1,19 +1,16 @@
 import React from 'react';
+import ProfileFields from './ProfileFields';
 
 const Profile = () => {
   return (
-    <div>
-      <h3>Profile</h3>
-      <div>
-        <label>username</label>
-        <input type='text' />
-        <label>email</label>
-        <input type='email' />
-        <label>data de nascimento</label>
-        <input type='date' />
-        <label>password</label>
-        <input type='text' />
-        <button>Registrar</button>
+    <div className='profile'>
+      <div className='container'>
+        <div className='profile-username'>username</div>
+        <ProfileFields label='username' />
+        <ProfileFields label='email' />
+        <ProfileFields label='old-password' />
+        <ProfileFields label='new-password' />
+        <button className='button button-red'>Salvar</button>
       </div>
     </div>
   );

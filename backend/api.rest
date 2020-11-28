@@ -1,5 +1,7 @@
 # TODO: verificar headers token
 # TODO: verificar express-async-errors
+
+# 7 Logging to mongodb
 ###
 GET http://localhost:8000/api/users HTTP/1.1
 

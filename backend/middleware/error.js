@@ -1,5 +1,9 @@
+const winston = require('winston');
+
 module.exports = function (err, req, res, next) {
-  // log the exception
-  // depois de todos middleware
+  winston.error(err.message, err);
+
+  // error, warn, info, verbose, debug, silly
   res.status(500).send('Something failed.');
+  // depois de todos middleware's
 };
