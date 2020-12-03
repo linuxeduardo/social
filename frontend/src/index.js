@@ -3,12 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './css/reset.css';
-import './css/main.css';
-import './css/modal.css';
-import './css/menu.css';
-import './css/app.css';
-import './css/message.css';
-import './css/profile.css';
+import './css/base.css';
 
 ReactDOM.render(
   <React.StrictMode>

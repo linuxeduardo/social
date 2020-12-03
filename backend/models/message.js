@@ -5,7 +5,7 @@ Joi.objectId = require('joi-objectid')(Joi);
 const Message = mongoose.model(
   'Message',
   new mongoose.Schema({
-    content: { type: String, required: true, minlength: 3, maxlength: 255 },
+    content: { type: String, required: true, minlength: 5, maxlength: 50 },
     createdAt: { type: Date, default: Date.now, once: true },
     updatedAt: { type: Date, default: Date.now },
     replies: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Reply' }],
@@ -15,7 +15,7 @@ const Message = mongoose.model(
 
 function validateMessage(message) {
   const schema = Joi.object({
-    content: Joi.string().min(3).max(255).required(),
+    content: Joi.string().min(5).max(50).required(),
     userId: Joi.objectId()
   });
   return schema.validate(message);

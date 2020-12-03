@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { Reply, validate } = require('../models/reply');
 const { Message } = require('../models/message');
+const validateObjectId = require('../middleware/validateObjectId');
 
 /* GET reply listing. */
 router.get('/', async (req, res) => {
@@ -29,7 +30,7 @@ router.post('/:id', async (req, res) => {
 });
 
 // PUT
-router.put('/:id', async (req, res) => {
+router.put('/:id', validateObjectId, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].reply);
 

@@ -1,12 +1,7 @@
 import React from 'react';
 
 const Reply = () => {
-  return (
-    <div>
-      <p>reply</p>
-      <textarea></textarea>
-    </div>
-  );
+  return <div className='reply'>reply</div>;
 };
 
 export default Reply;

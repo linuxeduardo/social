@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 const config = require('config');
 const logger = require('./winston');
+const db = config.get('dbURI');
+
+// NODE_ENV=test
 
 module.exports = function () {
   mongoose
-    .connect(config.get('mongoDBUri'), {
+    .connect(db, {
       useNewUrlParser: true,
       useFindAndModify: false,
       useUnifiedTopology: true,
@@ -13,7 +16,7 @@ module.exports = function () {
     .then(() =>
       logger.log({
         level: 'info',
-        message: 'Connected to DB...!'
+        message: `Connected to ${db} : ${new Date().toLocaleString('pt-BR')} `
       })
     );
 };

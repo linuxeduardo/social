@@ -1,4 +1,4 @@
 {
   "jwtPrivateKey": "369",
-  "mongoDBUri": "mongodb://localhost/messa"
+  "dbURI": "mongodb://localhost/messa"
 }

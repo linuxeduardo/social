@@ -1,7 +1,7 @@
 const lib = require('./lib');
 const db = require('./db');
 const mail = require('./mail');
-// 13 folder 01 file
+
 
 describe('absolute', () => {
   it('should return a positive number if input is positive', () => {

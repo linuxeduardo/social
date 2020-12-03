@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Open+Sans:wght@300;400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* 300 400 */
+}
+
+/* titles */
+h1 {
+  font-family: 'Castoro', serif;
+  /* 400 */
+}
+
+/* logos */
+.logo-svg {
+  height: 45px;
+}
+
+/* font */
+.serif {
+  font-family: 'Castoro', serif;
+}
+.sans {
+  font-family: 'Open Sans', sans-serif;
+}
+/* colors */
+.primary {
+  background: #b3e0f3;
+  color: #2e495a;
+}
+.secondary {
+  background: #f11b1b;
+  color: #fff;
+}
+
+/* form */
+button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.08rem;
+}
+button:hover {
+  opacity: 0.8;
+}
+label {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+}
+input {
+  border: 1px solid #bbb;
+  border-radius: 0;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-weight: normal;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+input:focus,
+input:active {
+  border: 1px solid #2e495a;
+}
+/* divider */
+.divider {
+  display: flex;
+  font-weight: 400;
+}
+
+.divider::after,
+.divider::before {
+  content: '';
+  flex: 1;
+}
+.line {
+  align-items: center;
+  margin: 1em -1em;
+}
+.line::after,
+.line::before {
+  height: 1px;
+  margin: 0 1em;
+  background: #2e495a;
+}
+
+/* links */
+a {
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  color: #f11b1b;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* margin-top */
+.mt-1 {
+  margin-top: 0.2rem;
+}
+.mt-2 {
+  margin-top: 0.4rem;
+}
+.mt-3 {
+  margin-top: 0.6rem;
+}
+.mt-4 {
+  margin-top: 0.8rem;
+}
+.mt-5 {
+  margin-top: 1rem;
+}
+.mt-6 {
+  margin-top: 2rem;
+}
+.mt-7 {
+  margin-top: 3rem;
+}
+.mt-8 {
+  margin-top: 4rem;
+}

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const { Message, validate } = require('../models/message');
 const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
-
+const validateObjectId = require('../middleware/validateObjectId');
 /* GET messages */
 router.get('/', async (req, res) => {
   const messages = await Message.find();
@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
 });
 
 /* GET by ID */
-router.get('/:id', async (req, res) => {
+router.get('/:id', validateObjectId, async (req, res) => {
   const message = await await Message.findOne({ _id: req.params.id });
   if (!message) return res.status(404).send('Mensagem não encontrada.');
 
