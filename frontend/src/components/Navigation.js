@@ -1,46 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Message from '../assets/message.svg';
-import Smile from '../assets/smile.svg';
-import Bell from '../assets/bell.svg';
-import Send from '../assets/send.svg';
-import Profile from './Profile';
+import Logo from './Logo';
 
 const Navigation = () => {
   return (
-    <nav className='Menu'>
+    <nav className='menu'>
       <ul>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to='/'>
+            <Logo />
+          </Link>
         </li>
         <li>
           <Link to='/profile'>
-            <img src={Smile} alt='profile' />
             <span>Profile</span>
           </Link>
         </li>
         <li>
           <Link to='/messages'>
-            <img src={Message} alt='mensagens' />
-            <span>Mensagens</span>
+            <span>My Messages</span>
           </Link>
         </li>
         <li>
           <Link to='/friends'>
-            <img src={Smile} alt='smile' />
-            <span>Amigos</span>
+            <span>Friends</span>
           </Link>
         </li>
         <li>
           <Link to='/login'>
-            <img src={Bell} alt='login' />
             <span>Login</span>
           </Link>
         </li>
         <li>
           <Link to='/register'>
-            <img src={Send} alt='respostas' />
-
             <span>Register</span>
           </Link>
         </li>

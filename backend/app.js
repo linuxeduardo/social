@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+const cors = require('cors');
 const createError = require('http-errors');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -15,6 +16,7 @@ require('./startup/logging')();
 require('./startup/config')();
 
 // view engine setup
+app.use(cors());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use(morgan('dev'));

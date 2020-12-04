@@ -1,0 +1,23 @@
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile-right-side,
+.profile-left-side {
+  padding: 2rem;
+}
+.profile-left-side {
+  background-color: #fff;
+}
+.profile-data--item {
+  margin: 1rem 0 2rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+.profile-data--item p {
+  font-size: 2rem;
+}
+.profile-data--item label {
+  color: #5085a5;
+  margin-bottom: 0.25rem;
+}

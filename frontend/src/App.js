@@ -9,7 +9,7 @@ import Messages from './components/Messages';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App container'>
       <div className='Nav'>
         <Navigation />
       </div>

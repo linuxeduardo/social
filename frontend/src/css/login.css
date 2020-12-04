@@ -3,10 +3,16 @@
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
 }
-.login-left-side {
-  background-color: #2e495a;
+
+.login-right-side {
+  padding: 2rem;
 }
-.login-right-side .title {
+
+.login-right-side--container {
+  max-width: 80%;
+}
+
+.login-right-side--title {
   color: #2e495a;
   font-size: 1.5rem;
   font-weight: bold;
@@ -14,16 +20,54 @@
   letter-spacing: 0.06em;
   margin-top: 3rem;
 }
-.login-right-side .container {
-  max-width: 50%;
-}
-.login-right-side .create-new-account {
+
+.login-right-side--new-account {
   font-size: 0.8rem;
   line-height: 1rem;
   letter-spacing: 0.06em;
   color: #5085a5;
 }
+.login-right-side--new-account a {
+  margin-left: 0.25rem;
+  color: #f11b1b;
+}
+.login-right-side--new-account a:hover {
+  color: #ff8e8e;
+}
+.login-check {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem 0;
+}
+.login-check label {
+  margin-left: 0.2rem;
+}
+/* queries */
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .login {
+    grid-template-columns: 1fr;
+  }
+  .login-right-side {
+    grid-row-start: 1;
+  }
+  .login-right-side--container {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
 
-.input-field {
-  margin: 1rem 0;
+/* Smartphones ----------- */
+@media only screen and (max-width: 767px) {
+  .login {
+    grid-template-columns: 1fr;
+  }
+  .login-right-side {
+    grid-row-start: 1;
+  }
+  .login-right-side--container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }

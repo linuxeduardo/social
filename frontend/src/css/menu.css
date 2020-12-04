@@ -1,0 +1,17 @@
+.menu {
+  background-color: #fff;
+}
+.menu ul {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu ul li {
+  margin-right: 1.5rem;
+}
+.menu ul li a {
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.4rem;
+}

@@ -79,3 +79,7 @@
 {"level":"info","message":"Connected to mongodb://localhost/messa_tests : 12/2/2020, 5:10:04 PM "}
 {"level":"info","message":"Connected to mongodb://localhost/messa_tests : 12/2/2020, 5:10:48 PM "}
 {"level":"info","message":"Connected to mongodb://localhost/messa_tests : 12/2/2020, 5:10:52 PM "}
+{"level":"info","message":"Connected to mongodb://localhost/messa : 12/4/2020, 4:54:48 PM "}
+{"level":"info","message":"Connected to mongodb://localhost/messa : 12/4/2020, 5:07:14 PM "}
+{"level":"info","message":"Connected to mongodb://localhost/messa : 12/4/2020, 5:14:12 PM "}
+{"level":"info","message":"Connected to mongodb://localhost/messa : 12/4/2020, 5:14:22 PM "}

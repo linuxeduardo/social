@@ -1,0 +1,40 @@
+.message {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin: 0.5rem 0;
+  position: relative;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  background-color: rgba(10, 16, 95, 0.1);
+}
+.message:hover {
+  border: 1px solid rgba(10, 16, 95, 0.8);
+}
+
+.message-content {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #fff;
+}
+.message-username {
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem;
+  align-self: flex-start;
+}
+.message-content--reply {
+  color: #5085a5;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  margin-left: auto;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
