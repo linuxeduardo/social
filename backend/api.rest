@@ -2,32 +2,33 @@
 # TODO: verificar express-async-errors
 // 13 folder 13 file
 ###
-GET http://localhost:8000/api/users HTTP/1.1
+GET http://localhost:4000/api/users HTTP/1.1
 
 ### get user info by token
-GET http://localhost:8000/api/users/me HTTP/1.1
+GET http://localhost:4000/api/users/me HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmOTRlZmZhNWIxYjMyYmM3YTk0MWYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDQwMDM1LCJleHAiOjE2MDc0NDAzMzV9.GogsdzrdxEXEXkZuYPgBWqHDLyuXT30yglv2oUB9ZBA
 
 ### REGISTRATION
-POST http://localhost:8000/api/users HTTP/1.1
+POST http://localhost:4000/api/users HTTP/1.1
 content-type: application/json
 
 {
-    "name": "max4",
-    "email": "max4@email.com",
+    "name": "max",
+    "email": "max@email.com",
     "password": "123"
 }
 
 ### POST user LOGIN
-POST http://localhost:8000/api/auth HTTP/1.1
+POST http://localhost:4000/api/auth HTTP/1.1
 content-type: application/json
 
 {
-    "email": "max4@email.com",
+    "email": "max@email.com",
     "password": "123"
 }
 
 ### EDIT
-PUT http://localhost:8000/api/users/5fbd0011d890c81fcce6bf9f HTTP/1.1
+PUT http://localhost:4000/api/users/5fbd0011d890c81fcce6bf9f HTTP/1.1
 content-type: application/json
 
 {
@@ -37,36 +38,37 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:8000/api/users/5fbd006e66cb2b3d7001eaf3 HTTP/1.1
+DELETE http://localhost:4000/api/users/5fbd006e66cb2b3d7001eaf3 HTTP/1.1
 
 #TODO:FIXME:TODO:FIXME:TODO:FIXME:TODO:FIXME:TODO:
 ###
-GET http://localhost:8000/api/messages HTTP/1.1
+GET http://localhost:4000/api/messages HTTP/1.1
 
 ### get by id
-GET http://localhost:8000/api/messages/5fc00f5b221fee28f016ddd1 HTTP/1.1
+GET http://localhost:4000/api/messages/5fc00f5b221fee28f016ddd1 HTTP/1.1
 
-### new message
-POST http://localhost:8000/api/messages HTTP/1.1
+### new message auth
+POST http://localhost:4000/api/messages HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmOTRlZmZhNWIxYjMyYmM3YTk0MWYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDQwMDM1LCJleHAiOjE2MDc0NDAzMzV9.GogsdzrdxEXEXkZuYPgBWqHDLyuXT30yglv2oUB9ZBA
 content-type: application/json
 
 {
-    "content": "new message!!",
-    "userId": "5fbedae47cd36108180346c2"
+    "content": "New message!!",
+    "userId": "5fcacbea351fdc30943aca76"
 }
 
 ### POST with middleware
-POST http://localhost:8000/api/messages HTTP/1.1
+POST http://localhost:4000/api/messages HTTP/1.1
 content-type: application/json
 
 {
     "content": "oioi",
-    "userId":"5fbfa607ec685537881f49e6"
+    "userId":"5fcacbea351fdc30943aca76"
 }
 
 
 ###
-PUT http://localhost:8000/api/messages/5fbd08fe9316d93280baa50d HTTP/1.1
+PUT http://localhost:4000/api/messages/5fbd08fe9316d93280baa50d HTTP/1.1
 content-type: application/json
 
 {
@@ -74,24 +76,24 @@ content-type: application/json
 }
 
 ### del message com token e role
-DELETE http://localhost:8000/api/messages/5fbfb2f1aa4edf2b6cf315e1 HTTP/1.1
+DELETE http://localhost:4000/api/messages/5fbfb2f1aa4edf2b6cf315e1 HTTP/1.1
 
 #TODO:FIXME:TODO:FIXME:TODO:FIXME:TODO:FIXME:TODO:
 ###
-GET http://localhost:8000/api/reply HTTP/1.1
+GET http://localhost:4000/api/reply HTTP/1.1
 
 ###
 
-POST http://localhost:8000/api/reply/5fbedeb54f4d6e3a8848cce2 HTTP/1.1
+POST http://localhost:4000/api/reply/5fbedeb54f4d6e3a8848cce2 HTTP/1.1
 content-type: application/json
 
 {
     "content": "replies HERE 2 !!",
-    "userId":"5fbede78ca874243fcf55903"
+    "userId":"5fcacbea351fdc30943aca76"
 }
 
 ###
-PUT http://localhost:8000/api/reply/5fbedf154f4d6e3a8848cce4 HTTP/1.1
+PUT http://localhost:4000/api/reply/5fbedf154f4d6e3a8848cce4 HTTP/1.1
 content-type: application/json
 
 {
@@ -99,9 +101,7 @@ content-type: application/json
 }
 
 ### dele with admin and auth
-DELETE http://localhost:8000/api/reply/5fbd10ccb031e42b1009ad4f HTTP/1.1
-
-# TODO: remove reply
+DELETE http://localhost:4000/api/reply/5fcacc2a351fdc30943aca77 HTTP/1.1
 
 
 

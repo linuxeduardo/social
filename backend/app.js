@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const express = require('express');
 const app = express();
 
@@ -9,6 +8,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 
+app.use(cors());
+
 require('./startup/routes')(app);
 require('./startup/db')();
 require('./startup/validation')();
@@ -16,7 +17,7 @@ require('./startup/logging')();
 require('./startup/config')();
 
 // view engine setup
-app.use(cors());
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use(morgan('dev'));

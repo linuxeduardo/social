@@ -12,16 +12,18 @@ module.exports = function () {
   const winstonLogger = createLogger({
     defaultMeta: { service: 'user-service' },
     transports: [
-      new logger.transports.File({ filename: 'error.log', level: 'error' }),
-      new logger.transports.File({ filename: 'combined.log' })
+      new logger.transports.File({ filename: 'log/error.log', level: 'error' }),
+      new logger.transports.File({ filename: 'log/combined.log' })
     ],
-    exceptionHandlers: [new transports.File({ filename: 'exceptions.log' })],
+    exceptionHandlers: [
+      new transports.File({ filename: 'log/exceptions.log' })
+    ],
     format: combine(label({ label: 'meow' }), timestamp(), myFormat)
   });
 
   // Call exceptions.handle with a transport to handle exceptions
   winstonLogger.exceptions.handle(
-    new transports.File({ filename: 'exceptions.log' })
+    new transports.File({ filename: 'log/exceptions.log' })
   );
 
   process.on('unhandledRejection', ex => {

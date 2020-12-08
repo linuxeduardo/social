@@ -91,7 +91,10 @@ small {
   background: #f11b1b;
   color: #fff;
 }
-
+.gray {
+  background-color: #777;
+  color: #fff;
+}
 /* form */
 button {
   width: 100%;
@@ -203,7 +206,8 @@ a:hover {
 }
 
 /* error- */
-.error-message {
+.error-message,
+.error {
   padding: 0.6rem 1rem;
   font-size: 0.8rem;
   line-height: 1.2rem;

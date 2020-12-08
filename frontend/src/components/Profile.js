@@ -6,7 +6,7 @@ import Button from './form/Button';
 
 const Profile = () => {
   const email = useForm();
-  const firstName = useForm();
+  const name = useForm();
   const lastName = useForm();
   const password = useForm();
   const country = useForm();
@@ -54,7 +54,7 @@ const Profile = () => {
             type='text'
             name='loginFirstName'
             placeholder='Digite seu nome aqui...'
-            {...firstName}
+            {...name}
           />
           <Input
             label='Last Name'
@@ -73,7 +73,7 @@ const Profile = () => {
           <Input
             label='Password Again'
             type='password'
-            name='loginPassword'
+            name='loginPasswordAgain'
             placeholder='Digite novamente sua senha aqui...'
             {...password}
           />

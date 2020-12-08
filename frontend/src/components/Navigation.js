@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UserContext from '../UserContext';
 import Logo from './Logo';
 
 const Navigation = () => {
+  const { userLogout, login } = React.useContext(UserContext);
+
+  const logout = async () => {
+    await userLogout();
+  };
+
   return (
     <nav className='menu'>
       <ul>
@@ -26,16 +33,27 @@ const Navigation = () => {
             <span>Friends</span>
           </Link>
         </li>
-        <li>
-          <Link to='/login'>
-            <span>Login</span>
-          </Link>
-        </li>
-        <li>
-          <Link to='/register'>
-            <span>Register</span>
-          </Link>
-        </li>
+
+        {!login && (
+          <>
+            <li>
+              <Link to='/login'>
+                <span>Login</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/register'>
+                <span>Register</span>
+              </Link>
+            </li>
+          </>
+        )}
+
+        {login && (
+          <li>
+            <button onClick={logout}>Log out</button>
+          </li>
+        )}
       </ul>
     </nav>
   );

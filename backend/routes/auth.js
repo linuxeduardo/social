@@ -11,14 +11,15 @@ router.post('/', async (req, res) => {
   if (error) return res.status(400).send(error.details[0].message);
 
   let user = await User.findOne({ email: req.body.email });
-  if (!user) return res.status(400).send('Email ou Senha Inválido.');
+  if (!user)
+    return res.status(400).send({ message: 'Email ou Senha Inválido.' });
 
   const validPassword = await bc.compare(req.body.password, user.password);
-  if (!validPassword) return res.status(400).send('Email ou Senha Inválido.');
+  if (!validPassword)
+    return res.status(400).send({ message: 'Email ou Senha Inválido.' });
 
   const token = user.generateAuthToken();
-
-  res.send(token);
+  res.status(200).send(token);
 });
 
 function validate(req) {

@@ -1,0 +1,284 @@
+2020-12-04T23:54:18.978Z [meow] error: uncaughtException: Cannot read property 'replies' of null
+TypeError: Cannot read property 'replies' of null
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:26:11
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-04T23:54:18.978Z [meow] error: uncaughtException: Cannot read property 'replies' of null
+TypeError: Cannot read property 'replies' of null
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:26:11
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-05T00:33:24.179Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:33:24.179Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:34:00.908Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:34:00.908Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:36:07.976Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:36:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-05T00:36:07.976Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:36:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-05T00:37:15.833Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:37:15.833Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:37:34.127Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:37:34.127Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:37:59.913Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:20:22
+2020-12-05T00:37:59.913Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:20:22
+2020-12-05T00:38:22.618Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-05T00:38:22.618Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:19:22
+2020-12-07T20:26:26.938Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:26:26.938Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:27:55.438Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:37:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:27:55.438Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:37:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:28:23.530Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:36:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:28:23.530Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:36:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:28:52.182Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:28:52.182Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:29:32.267Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:37:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:29:32.267Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:37:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:30:16.716Z [meow] error: uncaughtException: token is not defined
+ReferenceError: token is not defined
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:38:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:30:16.716Z [meow] error: uncaughtException: token is not defined
+ReferenceError: token is not defined
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:38:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:32:27.141Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:32:27.141Z [meow] error: uncaughtException: "exp" is not allowed in "options"
+Error: "exp" is not allowed in "options"
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:47:17
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validateOptions (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:58:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:141:5)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:37:46.721Z [meow] error: uncaughtException: "exp" should be a number of seconds
+Error: "exp" should be a number of seconds
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:52:15
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validatePayload (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:114:7)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:14)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-07T20:37:46.721Z [meow] error: uncaughtException: "exp" should be a number of seconds
+Error: "exp" should be a number of seconds
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:52:15
+    at Array.forEach (<anonymous>)
+    at validate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:43:6)
+    at validatePayload (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\sign.js:114:7)
+    at model.userSchema.methods.generateAuthToken (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:23:14)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:35:22
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

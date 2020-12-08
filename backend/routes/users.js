@@ -14,13 +14,12 @@ router.get('/', async (req, res) => {
 
 // getting current user
 router.get('/me', auth, async (req, res) => {
-  const user = await User.findById(req.user._id).select('-password');
+  const user = await User.findById(req.user._id).select('-password -__v');
   res.send(user);
 });
 
 // POST user registration
 router.post('/', async (req, res) => {
-  console.log(req.body);
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -34,13 +33,14 @@ router.post('/', async (req, res) => {
   await user.save();
 
   const token = user.generateAuthToken();
+
   res
     .header('x-auth-token', token)
     .send(_.pick(user, ['_id', 'name', 'email']));
 });
 
 // PUT
-router.put('/:id', validateObjectId, async (req, res) => {
+router.put('/:id', auth, validateObjectId, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -57,7 +57,8 @@ router.put('/:id', validateObjectId, async (req, res) => {
 });
 
 // DELETE
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
+  // TODO: verificar se o user a ser deletado é o mesmo do token
   const user = await User.findByIdAndRemove(req.params.id);
   if (!user) return res.status(404).send('Usuário não encontrado.');
 

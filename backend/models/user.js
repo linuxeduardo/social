@@ -14,17 +14,19 @@ const userSchema = new mongoose.Schema({
     unique: true
   },
   password: { type: String, required: true, minlength: 3, maxlength: 255 },
-  birth: { type: Date, default: Date.now },
-  isAdmin: { type: Boolean }
+  birth: { type: Date },
+  isAdmin: { type: Boolean, default: false }
 });
 
 userSchema.methods.generateAuthToken = function () {
   // const token = jwt.sign({ _id: user._id }, process.env.SECRET);
-  const token = jwt.sign(
+  return jwt.sign(
     { _id: this._id, isAdmin: this.isAdmin },
-    config.get('jwtPrivateKey')
+    config.get('jwtPrivateKey'),
+    {
+      expiresIn: '15m'
+    }
   );
-  return token;
 };
 
 const User = mongoose.model('User', userSchema);
