@@ -64,11 +64,6 @@ const Login = () => {
               ) : (
                 <Button color='secondary'>Log In</Button>
               )}
-
-              <small className='todo'>
-                todo: verify email, if ok show password input, todo: fix email
-                validation, Photo by Sajad Nori on Unsplash
-              </small>
             </div>
 
             {error && (
@@ -79,9 +74,9 @@ const Login = () => {
           </form>
 
           <div className='login-right-side--new-account mt-8'>
-            Don't have an account?{' '}
+            Don't have an account?
             <Link to='/register'>
-              <span>Sign Up</span>
+              <span> Sign Up</span>
             </Link>
           </div>
         </div>

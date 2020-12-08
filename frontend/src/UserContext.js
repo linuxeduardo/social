@@ -1,6 +1,11 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { GET_USER, POST_LOGIN, POST_NEW_USER } from './api/api';
+import {
+  GET_USER,
+  POST_LOGIN,
+  POST_NEW_USER,
+  POST_VALIDATE_TOKEN
+} from './api/api';
 import useFetch from './hooks/useFetch';
 export const UserContext = React.createContext();
 
@@ -56,11 +61,10 @@ export const UserStorage = ({ children }) => {
       const response = await fetch(url, options);
 
       if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+      const json = await response.json();
+      window.localStorage.setItem('token', json.token);
 
-      const { token } = await response.json();
-      window.localStorage.setItem('token', token);
-
-      await getUser(token);
+      // await getUser(token);
       setLogin(true);
       navigate.push('/');
     } catch (err) {
@@ -85,6 +89,30 @@ export const UserStorage = ({ children }) => {
     [navigate]
   );
 
+  // - - - - - - - - - - - auto login - - - - - - - - - - - - -
+  React.useEffect(() => {
+    async function autoLogin() {
+      const token = window.localStorage.getItem('token');
+      if (token) {
+        try {
+          setError(null);
+          setLoading(true);
+
+          const { url, options } = POST_VALIDATE_TOKEN(token);
+          const response = await fetch(url, options);
+          if (!response.ok) throw new Error('Token inválido.');
+          await getUser(token);
+        } catch (err) {
+          console.log(err);
+          userLogout();
+        } finally {
+          setLoading(false);
+        }
+      }
+    }
+    autoLogin();
+  }, [userLogout]);
+
   return (
     <UserContext.Provider
       value={{
@@ -95,6 +123,7 @@ export const UserStorage = ({ children }) => {
         error,
         loading,
         login,
+        data,
         userLogout
       }}
     >

@@ -8,6 +8,11 @@ GET http://localhost:4000/api/users HTTP/1.1
 GET http://localhost:4000/api/users/me HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmOTRlZmZhNWIxYjMyYmM3YTk0MWYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDQwMDM1LCJleHAiOjE2MDc0NDAzMzV9.GogsdzrdxEXEXkZuYPgBWqHDLyuXT30yglv2oUB9ZBA
 
+
+###
+POST http://localhost:4000/api/validate HTTP/1.1
+
+
 ### REGISTRATION
 POST http://localhost:4000/api/users HTTP/1.1
 content-type: application/json

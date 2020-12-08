@@ -4,6 +4,8 @@ const _ = require('lodash');
 const bc = require('bcrypt');
 const Joi = require('joi');
 const { User } = require('../models/user');
+const jwt = require('jsonwebtoken');
+const config = require('config');
 
 // POST user validation
 router.post('/', async (req, res) => {
@@ -19,7 +21,17 @@ router.post('/', async (req, res) => {
     return res.status(400).send({ message: 'Email ou Senha Inválido.' });
 
   const token = user.generateAuthToken();
-  res.status(200).send(token);
+  res.status(200).json({ token });
+});
+
+router.post('/validate', async (req, res) => {
+  const token = req.headers.authorization.split(' ')[1];
+  if (!token) return res.status(401).send('Sem permissão de acesso2.');
+
+  const decoded = jwt.verify(token, config.get('jwtPrivateKey'));
+  console.log(decoded);
+
+  res.status(200).send(true);
 });
 
 function validate(req) {

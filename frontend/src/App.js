@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Friends from './components/Friends';
 import Navigation from './components/Navigation';
 import Messages from './components/Messages';
+import ProtectedRoute from './helpers/ProtectedRoute';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Switch>
           <Route path='/register' component={Register} />
           <Route path='/login' component={Login} />
-          <Route path='/profile' component={Profile} />
+          <ProtectedRoute path='/profile' component={Profile} />
           <Route path='/messages' component={Messages} />
           <Route exact path='/' component={Home} />
           <Route exact path='/friends' component={Friends} />

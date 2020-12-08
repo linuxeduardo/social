@@ -110,11 +110,6 @@ const Register = () => {
               ) : (
                 <Button color='secondary'>Sign Up</Button>
               )}
-
-              <small className='todo'>
-                todo: verify inputs, if ok show password input, todo: fix email
-                validation
-              </small>
             </div>
 
             {error && (

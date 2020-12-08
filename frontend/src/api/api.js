@@ -37,6 +37,7 @@ export function POST_LOGIN(body) {
   };
 }
 
+// register user
 export function POST_NEW_USER(body) {
   return {
     url: `${API_URL}/api/users`,
@@ -56,6 +57,19 @@ export function GET_MESSAGES() {
     url: `${API_URL}/api/messages`,
     options: {
       method: 'GET'
+    }
+  };
+}
+
+// validate token
+export function POST_VALIDATE_TOKEN(token) {
+  return {
+    url: `${API_URL}/api/auth/validate`,
+    options: {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
     }
   };
 }

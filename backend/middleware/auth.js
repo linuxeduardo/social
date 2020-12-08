@@ -16,7 +16,9 @@ module.exports = function (req, res, next) {
   if (!token) return res.status(401).send('Sem permissão de acesso.');
 
   try {
+    // TODO: xAuthToken
     const decoded = jwt.verify(token, config.get('jwtPrivateKey'));
+    console.log(decoded);
     req.user = decoded;
     next();
   } catch (ex) {

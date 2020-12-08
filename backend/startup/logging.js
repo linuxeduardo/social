@@ -18,7 +18,7 @@ module.exports = function () {
     exceptionHandlers: [
       new transports.File({ filename: 'log/exceptions.log' })
     ],
-    format: combine(label({ label: 'meow' }), timestamp(), myFormat)
+    format: combine(label({ label: 'messa::backend' }), timestamp(), myFormat)
   });
 
   // Call exceptions.handle with a transport to handle exceptions

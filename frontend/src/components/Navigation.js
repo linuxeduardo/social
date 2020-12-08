@@ -18,21 +18,25 @@ const Navigation = () => {
             <Logo />
           </Link>
         </li>
-        <li>
-          <Link to='/profile'>
-            <span>Profile</span>
-          </Link>
-        </li>
-        <li>
-          <Link to='/messages'>
-            <span>My Messages</span>
-          </Link>
-        </li>
-        <li>
-          <Link to='/friends'>
-            <span>Friends</span>
-          </Link>
-        </li>
+        {login && (
+          <>
+            <li>
+              <Link to='/profile'>
+                <span>Profile</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/messages'>
+                <span>My Messages</span>
+              </Link>
+            </li>
+            <li>
+              <Link to='/friends'>
+                <span>Friends</span>
+              </Link>
+            </li>
+          </>
+        )}
 
         {!login && (
           <>
