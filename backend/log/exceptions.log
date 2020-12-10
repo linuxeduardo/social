@@ -70,3 +70,89 @@ ReferenceError: env is not defined
     at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
     at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
     at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:635:15
+2020-12-08T19:37:03.334Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:31:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-08T19:37:03.334Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:31:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-08T19:46:15.512Z [messa::backend] error: uncaughtException: Cannot apply rules to empty ruleset or the last rule added does not support rule properties
+Error: Cannot apply rules to empty ruleset or the last rule added does not support rule properties
+    at new module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\@hapi\hoek\lib\error.js:23:19)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\@hapi\hoek\lib\assert.js:20:11)
+    at internals.Base.rule (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\joi\lib\base.js:479:9)
+    at internals.Base.method [as message] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\joi\lib\extend.js:145:29)
+    at validateUser (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:36:50)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:45:21
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\validateObjectId.js:8:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:22:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-08T19:46:15.512Z [messa::backend] error: uncaughtException: Cannot apply rules to empty ruleset or the last rule added does not support rule properties
+Error: Cannot apply rules to empty ruleset or the last rule added does not support rule properties
+    at new module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\@hapi\hoek\lib\error.js:23:19)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\@hapi\hoek\lib\assert.js:20:11)
+    at internals.Base.rule (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\joi\lib\base.js:479:9)
+    at internals.Base.method [as message] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\joi\lib\extend.js:145:29)
+    at validateUser (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\models\user.js:36:50)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:45:21
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\validateObjectId.js:8:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:22:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-08T20:28:07.594Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:71:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-08T20:28:07.594Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:71:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

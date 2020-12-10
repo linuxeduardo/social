@@ -50,7 +50,9 @@ router.put('/:id', auth, validateObjectId, async (req, res) => {
   user.name = req.body.name;
   user.email = req.body.email;
   user.password = req.body.password;
-  user.birth = req.body.birth;
+  const salt = await bc.genSalt(parseInt(process.env.SALT, 10));
+  user.password = await bc.hash(user.password, salt);
+  // user.birth = req.body.birth;
 
   const result = await user.save();
   res.send(result);
@@ -58,11 +60,12 @@ router.put('/:id', auth, validateObjectId, async (req, res) => {
 
 // DELETE
 router.delete('/:id', auth, async (req, res) => {
-  // TODO: verificar se o user a ser deletado é o mesmo do token
-  const user = await User.findByIdAndRemove(req.params.id);
-  if (!user) return res.status(404).send('Usuário não encontrado.');
-
-  res.send(user);
+  if (req.user._id === req.params.id) {
+    const user = await User.findByIdAndRemove(req.params.id);
+    if (!user) return res.status(404).send('Usuário não encontrado.');
+    return res.status(200).send(user);
+  }
+  res.status(400).send('Usuário não encontrado ou sem permissão.');
 });
 
 module.exports = router;

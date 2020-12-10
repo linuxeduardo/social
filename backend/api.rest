@@ -6,10 +6,10 @@ GET http://localhost:4000/api/users HTTP/1.1
 
 ### get user info by token
 GET http://localhost:4000/api/users/me HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmOTRlZmZhNWIxYjMyYmM3YTk0MWYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDQwMDM1LCJleHAiOjE2MDc0NDAzMzV9.GogsdzrdxEXEXkZuYPgBWqHDLyuXT30yglv2oUB9ZBA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmZTM2ZDlhY2JlNjE2MDA0Y2Y1YjYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDU5NjkzLCJleHAiOjE2MDc0NjA1OTN9.jUa08UEC1s7vJ2ugXBc4jtm_y_yMk48QczFfF4Bbjho
 
 
-###
+### FIX
 POST http://localhost:4000/api/validate HTTP/1.1
 
 
@@ -18,8 +18,8 @@ POST http://localhost:4000/api/users HTTP/1.1
 content-type: application/json
 
 {
-    "name": "max",
-    "email": "max@email.com",
+    "name": "333",
+    "email": "max2@email.com",
     "password": "123"
 }
 
@@ -28,12 +28,13 @@ POST http://localhost:4000/api/auth HTTP/1.1
 content-type: application/json
 
 {
-    "email": "max@email.com",
+    "email": "max2@email.com",
     "password": "123"
 }
 
-### EDIT
-PUT http://localhost:4000/api/users/5fbd0011d890c81fcce6bf9f HTTP/1.1
+### EDIT id, body, token
+PUT http://localhost:4000/api/users/5fcfdb31fbf4a10e68768012 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNlYWJlYjMwZjE1MjNjYWMwOTY3OTUiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDU4NDYyLCJleHAiOjE2MDc0NTkzNjJ9.Apz1rPM2HUNMlnnUni4z9mSmd-LNGfb6dWjH0Ojm3Fc
 content-type: application/json
 
 {
@@ -43,8 +44,8 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:4000/api/users/5fbd006e66cb2b3d7001eaf3 HTTP/1.1
-
+DELETE http://localhost:4000/api/users/5fcfe1f09acbe616004cf5b4 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmZTFmMDlhY2JlNjE2MDA0Y2Y1YjQiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDU5MzQyLCJleHAiOjE2MDc0NjAyNDJ9.7wMs4gudiadWjB4FgHHGBmbjwh2QrNyHiUUoJHIy8QM
 #TODO:FIXME:TODO:FIXME:TODO:FIXME:TODO:FIXME:TODO:
 ###
 GET http://localhost:4000/api/messages HTTP/1.1

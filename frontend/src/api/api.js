@@ -73,3 +73,20 @@ export function POST_VALIDATE_TOKEN(token) {
     }
   };
 }
+
+// edit user Profile
+export function PUT_UPDATE_USER(token, id, body) {
+  console.log(body);
+  // TODO: form-data
+  return {
+    url: `${API_URL}/api/users/${id}`,
+    options: {
+      method: 'PUT',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    }
+  };
+}

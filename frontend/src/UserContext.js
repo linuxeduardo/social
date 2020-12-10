@@ -38,6 +38,7 @@ export const UserStorage = ({ children }) => {
     try {
       setError(null);
       setLoading(true);
+
       const { url, options } = POST_NEW_USER({ name, email, password });
       const response = await fetch(url, options);
 
@@ -64,7 +65,8 @@ export const UserStorage = ({ children }) => {
       const json = await response.json();
       window.localStorage.setItem('token', json.token);
 
-      // await getUser(token);
+      const token = window.localStorage.getItem('token');
+      await getUser(token);
       setLogin(true);
       navigate.push('/');
     } catch (err) {
