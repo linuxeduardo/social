@@ -6,7 +6,6 @@ import Button from './form/Button';
 import UserContext from '../UserContext';
 import Error from '../helpers/Error';
 import { PUT_UPDATE_USER } from '../api/api';
-import { useHistory } from 'react-router-dom';
 
 const Profile = () => {
   const email = useForm();
@@ -14,9 +13,7 @@ const Profile = () => {
   const lastName = useForm();
   const password = useForm();
   const country = useForm();
-  const { error, loading, login, data } = React.useContext(UserContext);
-  // const navigate = useHistory();
-
+  const { error, loading, data } = React.useContext(UserContext);
   const handleSubmit = async e => {
     e.preventDefault();
 
@@ -27,10 +24,10 @@ const Profile = () => {
     };
     if (data) {
       const token = window.localStorage.getItem('token');
+
       try {
         const { url, options } = await PUT_UPDATE_USER(token, data._id, body);
         await fetch(url, options);
-        // navigate.go(0);
       } catch (err) {
         console.log(err);
       }
@@ -62,6 +59,8 @@ const Profile = () => {
           </div>
         </div>
       </div>
+
+      {/* TODO: somente o usuário da conta pode ver > */}
       <div className='profile-right-side'>
         {/* form para atualizar */}
         <div className='title serif'>

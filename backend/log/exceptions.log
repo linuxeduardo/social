@@ -156,3 +156,665 @@ Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the cli
     at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
     at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\users.js:71:19
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-10T19:04:05.781Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T19:04:05.781Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T19:35:04.174Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T19:35:04.174Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T19:59:13.986Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T19:59:13.986Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T19:59:17.680Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T19:59:17.680Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T20:16:42.796Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T20:16:42.796Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T23:12:39.536Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T23:12:39.536Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-10T23:16:50.352Z [messa::backend] error: uncaughtException: Message validation failed: userName: Cast to ObjectId failed for value "Eduardo" at path "userName"
+ValidationError: Message validation failed: userName: Cast to ObjectId failed for value "Eduardo" at path "userName"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:29:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-10T23:16:50.352Z [messa::backend] error: uncaughtException: Message validation failed: userName: Cast to ObjectId failed for value "Eduardo" at path "userName"
+ValidationError: Message validation failed: userName: Cast to ObjectId failed for value "Eduardo" at path "userName"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:29:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-10T23:40:25.640Z [messa::backend] error: uncaughtException: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+ValidationError: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:28:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-10T23:40:25.640Z [messa::backend] error: uncaughtException: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+ValidationError: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:28:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-10T23:41:00.697Z [messa::backend] error: uncaughtException: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+ValidationError: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:28:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-10T23:41:00.697Z [messa::backend] error: uncaughtException: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+ValidationError: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:28:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-10T23:41:39.867Z [messa::backend] error: uncaughtException: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+ValidationError: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:27:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-10T23:41:39.867Z [messa::backend] error: uncaughtException: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+ValidationError: Message validation failed: name: Cast to ObjectId failed for value "Eduardo" at path "name"
+    at model.Document.invalidate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:2626:32)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1290:12)
+    at model._handleIndex (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:1019:14)
+    at model.$set (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:960:22)
+    at model.Document (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\document.js:150:12)
+    at model.Model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:106:12)
+    at new model (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\model.js:4689:15)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:27:19
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+2020-12-11T00:06:39.723Z [messa::backend] error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:12:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T00:06:39.723Z [messa::backend] error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:12:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T15:51:06.732Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-11T15:51:06.732Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-11T16:00:22.631Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:158:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:57:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:00:22.631Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:158:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:57:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:00:53.575Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:158:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:57:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:00:53.575Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:158:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:57:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:03:19.591Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:6:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:03:19.591Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:6:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:03:33.127Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:5:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:03:33.127Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:5:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:03:39.746Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:5:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:03:39.746Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:5:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:03:58.832Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:5:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:03:58.832Z [messa::backend] error: uncaughtException: Cannot access 'message' before initialization
+ReferenceError: Cannot access 'message' before initialization
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:5:15)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-11T16:07:08.981Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:158:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:57:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:07:08.981Z [messa::backend] error: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\response.js:158:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:57:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:15:29.319Z [messa::backend] error: uncaughtException: req.user._id.equals is not a function
+TypeError: req.user._id.equals is not a function
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:7:20)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:15:29.319Z [messa::backend] error: uncaughtException: req.user._id.equals is not a function
+TypeError: req.user._id.equals is not a function
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:7:20)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:16:43.779Z [messa::backend] error: uncaughtException: req.user._id.equals is not a function
+TypeError: req.user._id.equals is not a function
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:7:20)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:16:43.779Z [messa::backend] error: uncaughtException: req.user._id.equals is not a function
+TypeError: req.user._id.equals is not a function
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:7:20)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:20:33.158Z [messa::backend] error: uncaughtException: userId.equals is not a function
+TypeError: userId.equals is not a function
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:9:14)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:20:33.158Z [messa::backend] error: uncaughtException: userId.equals is not a function
+TypeError: userId.equals is not a function
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\owner.js:9:14)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-11T16:50:03.461Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-11T16:50:03.461Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7

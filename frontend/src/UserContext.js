@@ -1,8 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import {
+  GET_ALL_MESSAGES,
   GET_USER,
   POST_LOGIN,
+  POST_NEW_MESSAGE,
   POST_NEW_USER,
   POST_VALIDATE_TOKEN
 } from './api/api';
@@ -19,6 +21,8 @@ export const UserStorage = ({ children }) => {
   const [users, setUsers] = React.useState(null);
   const navigate = useHistory();
   const { request, fetchError } = useFetch();
+  //
+  const [messageData, setMessageData] = React.useState(null);
   /* eslint-enable */
 
   async function getUser(token) {
@@ -91,6 +95,29 @@ export const UserStorage = ({ children }) => {
     [navigate]
   );
 
+  // - - - - - - - - - - - new message - - - - - - - - - - - - -
+  async function newMessage(content, token) {
+    let json;
+    try {
+      setError(null);
+      setLoading(true);
+      const { url, options } = POST_NEW_MESSAGE({ content }, token); // content > {content} unexpected json
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
+      json = await response.json();
+      console.log(json.message);
+      // FIXME: get message from node
+    } catch (err) {
+      console.log(json.message);
+      setError(err.message);
+      setLogin(false);
+      // FIXME: re login
+    } finally {
+      setLoading(false);
+    }
+  }
   // - - - - - - - - - - - auto login - - - - - - - - - - - - -
   React.useEffect(() => {
     async function autoLogin() {
@@ -115,6 +142,24 @@ export const UserStorage = ({ children }) => {
     autoLogin();
   }, [userLogout]);
 
+  async function fetchData() {
+    try {
+      setError(null);
+      setLoading(true);
+      const { url, options } = GET_ALL_MESSAGES();
+      const response = await fetch(url, options);
+      if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+      const json = await response.json();
+      setMessageData(json);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  React.useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <UserContext.Provider
       value={{
@@ -126,7 +171,10 @@ export const UserStorage = ({ children }) => {
         loading,
         login,
         data,
-        userLogout
+        userLogout,
+        newMessage,
+        messageData,
+        fetchData
       }}
     >
       {children}

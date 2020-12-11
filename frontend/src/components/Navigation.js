@@ -4,8 +4,8 @@ import UserContext from '../UserContext';
 import Logo from './Logo';
 
 const Navigation = () => {
-  const { userLogout, login } = React.useContext(UserContext);
-
+  const { userLogout, login, data } = React.useContext(UserContext);
+  // FIXME: react useFx check user logado
   const logout = async () => {
     await userLogout();
   };
@@ -22,7 +22,7 @@ const Navigation = () => {
           <>
             <li>
               <Link to='/profile'>
-                <span>Profile</span>
+                <span>{data ? data.email : 'Profile'}</span>
               </Link>
             </li>
             <li>

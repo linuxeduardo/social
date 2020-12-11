@@ -15,27 +15,17 @@ const Register = () => {
   const password = useForm();
   const country = useForm();
 
-  const [checked, setChecked] = React.useState(false);
-
   /* eslint-disable-next-line */
   const { error, loading, login, setError, userRegister } = React.useContext(
     UserContext
   );
 
-  const handleCheckbox = e => {
-    if (checked) setChecked(false);
-    else setChecked(true);
-  };
-
   const handleSubmit = async e => {
     e.preventDefault();
     if (name.validate() && email.validate() && password.validate()) {
       setError(null);
-      if (checked) {
-        userRegister(name.value, email.value, password.value);
-      } else {
-        setError('Você precisa aceitar os termos.');
-      }
+
+      userRegister(name.value, email.value, password.value);
     }
   };
 
@@ -93,13 +83,10 @@ const Register = () => {
             />
 
             <div className='login-check'>
-              <input type='checkbox' name='accept' id='acceptTerms' />
-              <label htmlFor='acceptTerms'>
-                I accept the Privacy Policy and the Terms of Service
-              </label>
-              <div className='cb'>
-                <Checkbox checked={checked} onChange={handleCheckbox} />
-              </div>
+              <Checkbox
+                name='acceptTerms'
+                content='I accept the Privacy Policy and the Terms of Service'
+              />
             </div>
 
             <div className='button mt-5'>

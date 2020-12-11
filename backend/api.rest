@@ -28,7 +28,7 @@ POST http://localhost:4000/api/auth HTTP/1.1
 content-type: application/json
 
 {
-    "email": "max2@email.com",
+    "email": "mario@gmail.com",
     "password": "123"
 }
 
@@ -55,7 +55,7 @@ GET http://localhost:4000/api/messages/5fc00f5b221fee28f016ddd1 HTTP/1.1
 
 ### new message auth
 POST http://localhost:4000/api/messages HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmOTRlZmZhNWIxYjMyYmM3YTk0MWYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NDQwMDM1LCJleHAiOjE2MDc0NDAzMzV9.GogsdzrdxEXEXkZuYPgBWqHDLyuXT30yglv2oUB9ZBA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmZTM2ZDlhY2JlNjE2MDA0Y2Y1YjYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NjMxMTgwLCJleHAiOjE2MDc2MzIwODB9.r3ykgTUZVUl1tY1eElL0918h2OhRhx947oRBQeqQPCY
 content-type: application/json
 
 {

@@ -21,10 +21,10 @@ const userSchema = new mongoose.Schema({
 userSchema.methods.generateAuthToken = function () {
   // const token = jwt.sign({ _id: user._id }, process.env.SECRET);
   return jwt.sign(
-    { _id: this._id, isAdmin: this.isAdmin },
+    { _id: this._id, isAdmin: this.isAdmin, name: this.name },
     config.get('jwtPrivateKey'),
     {
-      expiresIn: '15m'
+      expiresIn: '25m'
     }
   );
 };

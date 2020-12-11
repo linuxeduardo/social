@@ -5,31 +5,31 @@ const { Message, validate } = require('../models/message');
 const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
 const validateObjectId = require('../middleware/validateObjectId');
+const owner = require('../middleware/owner');
+
 /* GET messages */
 router.get('/', async (req, res) => {
-  const messages = await Message.find();
+  const messages = await Message.find()
+    .populate('name', 'name')
+    .sort([['createdAt', -1]]);
   res.send(messages);
 });
 
 /* GET by ID */
 router.get('/:id', validateObjectId, async (req, res) => {
-  const message = await await Message.findOne({ _id: req.params.id });
+  const message = await Message.findOne({ _id: req.params.id });
   if (!message) return res.status(404).send('Mensagem não encontrada.');
-
   res.send(message);
 });
 
 // POST message
 router.post('/', auth, async (req, res) => {
   const { error } = validate(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-
-  if (!mongoose.Types.ObjectId.isValid(req.body.userId))
-    return res.status(400).send('ID Inválido.');
+  if (error) return res.status(400).json({ message: error.details[0].message });
 
   const message = new Message({
     content: req.body.content,
-    userId: req.body.userId
+    name: req.user._id
   });
 
   const result = await message.save();
@@ -52,11 +52,11 @@ router.put('/:id', async (req, res) => {
 });
 
 // DELETE
-router.delete('/:id', [auth, admin], async (req, res) => {
+router.delete('/:id', [auth, owner], async (req, res) => {
   const message = await Message.findByIdAndRemove(req.params.id);
   if (!message) return res.status(404).send('Mensagem não encontrada.');
 
   res.send(message);
 });
-
+// [auth, admin],
 module.exports = router;

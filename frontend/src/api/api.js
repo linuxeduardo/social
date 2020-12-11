@@ -76,7 +76,6 @@ export function POST_VALIDATE_TOKEN(token) {
 
 // edit user Profile
 export function PUT_UPDATE_USER(token, id, body) {
-  console.log(body);
   // TODO: form-data
   return {
     url: `${API_URL}/api/users/${id}`,
@@ -87,6 +86,44 @@ export function PUT_UPDATE_USER(token, id, body) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(body)
+    }
+  };
+}
+
+// post new message
+// user login
+export function POST_NEW_MESSAGE(content, token) {
+  return {
+    url: `${API_URL}/api/messages`,
+    options: {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(content)
+    }
+  };
+}
+// get all messages
+export function GET_ALL_MESSAGES() {
+  return {
+    url: `${API_URL}/api/messages`,
+    options: {
+      method: 'GET'
+    }
+  };
+}
+
+// get all users
+export function DELETE_MESSAGE(id, token) {
+  return {
+    url: `${API_URL}/api/messages/${id}`,
+    options: {
+      method: 'DELETE',
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
     }
   };
 }

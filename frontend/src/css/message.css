@@ -1,40 +1,52 @@
 .message {
-  align-items: center;
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   display: grid;
-  grid-template-columns: 200px 1fr;
-  margin: 0.5rem 0;
-  position: relative;
-  border: 1px solid transparent;
-  transition: 0.1s;
-  background-color: rgba(10, 16, 95, 0.1);
-}
-.message:hover {
-  border: 1px solid rgba(10, 16, 95, 0.8);
-}
-
-.message-content {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
+  grid-template-columns: 1fr;
   padding: 1rem;
-  background-color: #fff;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .message-username {
-  color: #fff;
-  font-weight: 700;
-  padding: 1rem;
-  align-self: flex-start;
-}
-.message-content--reply {
-  color: #5085a5;
-  display: block;
+  cursor: pointer;
   font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06rem;
-  margin-left: auto;
-  padding: 0.5rem;
-  text-transform: uppercase;
+  color: #2e495a;
+}
+.message-content {
+  text-align: left;
+}
+.message-content span {
+  padding: 1rem 0;
+  display: inline-block;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+
+.message-content--reply {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.message-content--delete {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* new-message */
+.new-message form {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.new-message form input {
+  flex: 6;
+}
+.new-message form button {
+  flex: 1;
 }

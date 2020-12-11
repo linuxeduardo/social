@@ -113,6 +113,16 @@ button {
 button:hover {
   opacity: 0.8;
 }
+.button-link {
+  color: orange; /*FIXME: color*/
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  text-transform: uppercase;
+  width: auto;
+}
 label {
   display: block;
   font-size: 13px;
