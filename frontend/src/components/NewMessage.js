@@ -27,7 +27,7 @@ const NewMessage = () => {
   return (
     <div className='new-message'>
       <form onSubmit={handleSubmit}>
-        <input type='text' value={content} onChange={handleChange} />
+        <input type='text' placeholder='Escreva aqui sua mensagem..' value={content} onChange={handleChange} />
         <button className='secondary' type='submit'>
           Enviar
         </button>

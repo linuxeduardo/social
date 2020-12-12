@@ -115,7 +115,21 @@ export function GET_ALL_MESSAGES() {
   };
 }
 
-// get all users
+// get all messages by user
+export function GET_ALL_MESSAGES_BY_USER(token) {
+  return {
+    url: `${API_URL}/api/messages/my/messages`,
+    options: {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      }
+    }
+  };
+}
+
+// delete message
 export function DELETE_MESSAGE(id, token) {
   return {
     url: `${API_URL}/api/messages/${id}`,

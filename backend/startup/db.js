@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const config = require('config');
 const logger = require('./winston');
-const db = config.get('dbURI');
+const db = config.get('mongoDBOnline');
 
 // NODE_ENV=test
 

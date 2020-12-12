@@ -5,6 +5,7 @@ import UserContext from '../UserContext';
 
 const Messages = ({ content, username, messageId, userId, messageUserId }) => {
   const { fetchData, login } = React.useContext(UserContext);
+
   const deleteMessage = async messageId => {
     const ok = window.confirm('Press');
     if (ok) {
@@ -23,24 +24,27 @@ const Messages = ({ content, username, messageId, userId, messageUserId }) => {
 
   return (
     <div className='message'>
-      <div className='message-username'>{username}</div>
+      <div className='message-username'>@{username}</div>
       <div className='message-content'>
         <span>{content}</span>
-        <div className='message-content--reply'>
-          {login && <button className='button-link'>responder</button>}
+        <div className='message-options'>
+          <div className='message-content--reply'>
+            {login && <button className='button-link'>responder</button>}
+          </div>
+          <div className='message-content--delete'>
+            {messageUserId === userId ? (
+              <button
+                onClick={() => deleteMessage(messageId)}
+                className='button-link'
+              >
+                Apagar mensagem
+              </button>
+            ) : (
+              ''
+            )}
+          </div>
         </div>
-        <div className='message-content--delete'>
-          {messageUserId === userId ? (
-            <button
-              onClick={() => deleteMessage(messageId)}
-              className='button-link'
-            >
-              Apagar mensagem
-            </button>
-          ) : (
-            ''
-          )}
-        </div>
+
       </div>
     </div>
   );
