@@ -1,4 +1,5 @@
 {
   "jwtPrivateKey": "369",
-  "dbURI": "mongodb://localhost/messa"
+  "mongoDBLocal": "mongodb://localhost/messa",
+  "mongoDBOnline": "mongodb+srv://user:messa1985@cluster0.89non.mongodb.net/messa?retryWrites=true&w=majority"
 }

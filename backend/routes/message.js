@@ -22,6 +22,15 @@ router.get('/:id', validateObjectId, async (req, res) => {
   res.send(message);
 });
 
+/* GET by userID */
+router.get('/my/messages', auth, async (req, res) => {
+  const message = await Message.find({name: req.user._id})
+    .populate('name', 'name')
+    .sort([['createdAt', -1]]);
+  if (!message) return res.status(404).send('Mensagem não encontrada.');
+  res.send(message);
+});
+
 // POST message
 router.post('/', auth, async (req, res) => {
   const { error } = validate(req.body);

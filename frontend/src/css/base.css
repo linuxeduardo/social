@@ -123,6 +123,11 @@ button:hover {
   text-transform: uppercase;
   width: auto;
 }
+.button-logout {
+  color: #a1a1a1;
+  border: none;
+  padding: 0.4rem;
+}
 label {
   display: block;
   font-size: 13px;

@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Friends from './components/Friends';
 import Navigation from './components/Navigation';
 import Messages from './components/Messages';
+import MyMessages from './components/MyMessages';
 import ProtectedRoute from './helpers/ProtectedRoute';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/login' component={Login} />
           <ProtectedRoute path='/profile' component={Profile} />
           <Route path='/messages' component={Messages} />
+          <Route path='/my-messages' component={MyMessages} />
           <Route exact path='/' component={Home} />
           <Route exact path='/friends' component={Friends} />
         </Switch>

@@ -26,7 +26,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link to='/messages'>
+              <Link to='/my-messages'>
                 <span>My Messages</span>
               </Link>
             </li>
@@ -55,7 +55,7 @@ const Navigation = () => {
 
         {login && (
           <li>
-            <button onClick={logout}>Log out</button>
+            <button className='button-logout' onClick={logout}>Log out</button>
           </li>
         )}
       </ul>

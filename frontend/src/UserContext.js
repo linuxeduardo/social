@@ -6,7 +6,8 @@ import {
   POST_LOGIN,
   POST_NEW_MESSAGE,
   POST_NEW_USER,
-  POST_VALIDATE_TOKEN
+  POST_VALIDATE_TOKEN,
+  GET_ALL_MESSAGES_BY_USER
 } from './api/api';
 import useFetch from './hooks/useFetch';
 export const UserContext = React.createContext();
@@ -17,7 +18,8 @@ export const UserStorage = ({ children }) => {
   const [login, setLogin] = React.useState(null);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
-  const [messages, setMessages] = React.useState(null);
+  const [messages, setMessages] = React.useState([]);
+  const [messagesByUser, setMessagesByUser] = React.useState([]);
   const [users, setUsers] = React.useState(null);
   const navigate = useHistory();
   const { request, fetchError } = useFetch();
@@ -27,6 +29,7 @@ export const UserStorage = ({ children }) => {
 
   async function getUser(token) {
     try {
+      setLoading(true)
       const { url, options } = GET_USER(token);
       const response = await fetch(url, options);
       const json = await response.json();
@@ -34,6 +37,8 @@ export const UserStorage = ({ children }) => {
       setLogin(true);
     } catch (err) {
       console.warn(err.message);
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -142,6 +147,24 @@ export const UserStorage = ({ children }) => {
     autoLogin();
   }, [userLogout]);
 
+  async function messageDataByUser() {
+    try {
+      setError(null);
+      setLoading(true);
+        const token = window.localStorage.getItem('token');
+        const { url, options } = GET_ALL_MESSAGES_BY_USER(token);
+        const response = await fetch(url, options);
+       if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+       const json = await response.json();
+       setMessagesByUser(json);
+
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false)
+    }
+  }
+
   async function fetchData() {
     try {
       setError(null);
@@ -153,6 +176,8 @@ export const UserStorage = ({ children }) => {
       setMessageData(json);
     } catch (err) {
       console.log(err);
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -174,7 +199,9 @@ export const UserStorage = ({ children }) => {
         userLogout,
         newMessage,
         messageData,
-        fetchData
+        fetchData,
+        messagesByUser,
+        messageDataByUser
       }}
     >
       {children}
