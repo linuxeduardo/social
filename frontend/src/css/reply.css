@@ -1,0 +1,22 @@
+.reply {
+  display: none;
+  transition: 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+  margin: 1rem 0;
+  display: block;
+  border: 1px solid #aaa;
+}
+textarea:active,
+textarea:hover,
+textarea:focus {
+  border: 1px solid #2e495a;
+}
+
+.reply-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}

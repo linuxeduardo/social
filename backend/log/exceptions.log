@@ -1366,3 +1366,147 @@ ReferenceError: messages is not defined
 ReferenceError: messages is not defined
     at router.get (/media/eucri/Plus/Web/social/backend/routes/message.js:30:15)
     at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-12-16T12:25:16.258Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T12:25:16.258Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T12:58:38.676Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T12:58:38.676Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T13:24:56.585Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T13:24:56.585Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T13:53:27.941Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T13:53:27.941Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7

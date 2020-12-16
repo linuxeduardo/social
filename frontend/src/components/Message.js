@@ -1,10 +1,12 @@
 import React from 'react';
 import { DELETE_MESSAGE } from '../api/api';
-import '../css/message.css';
 import UserContext from '../UserContext';
+import Reply from './Reply';
+import '../css/message.css';
 
 const Messages = ({ content, username, messageId, userId, messageUserId }) => {
   const { fetchData, login } = React.useContext(UserContext);
+  const [show, setShow] = React.useState('none');
 
   const deleteMessage = async messageId => {
     const ok = window.confirm('Press');
@@ -22,14 +24,25 @@ const Messages = ({ content, username, messageId, userId, messageUserId }) => {
     }
   };
 
+  const handleReply = () => {
+    setShow('block');
+  };
+
   return (
-    <div className='message'>
-      <div className='message-username'>@{username}</div>
-      <div className='message-content'>
-        <span>{content}</span>
+    <>
+      <div className='message'>
+        <div className='message-username'>@{username}</div>
+        <div className='message-content'>
+          <span>{content}</span>
+        </div>
+
         <div className='message-options'>
           <div className='message-content--reply'>
-            {login && <button className='button-link'>responder</button>}
+            {login && (
+              <button className='button-link' onClick={handleReply}>
+                responder
+              </button>
+            )}
           </div>
           <div className='message-content--delete'>
             {messageUserId === userId ? (
@@ -44,9 +57,9 @@ const Messages = ({ content, username, messageId, userId, messageUserId }) => {
             )}
           </div>
         </div>
-
       </div>
-    </div>
+      <Reply messageId={messageId} show={show} />
+    </>
   );
 };
 

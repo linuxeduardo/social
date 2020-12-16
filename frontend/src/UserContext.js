@@ -29,7 +29,7 @@ export const UserStorage = ({ children }) => {
 
   async function getUser(token) {
     try {
-      setLoading(true)
+      setLoading(true);
       const { url, options } = GET_USER(token);
       const response = await fetch(url, options);
       const json = await response.json();
@@ -38,7 +38,7 @@ export const UserStorage = ({ children }) => {
     } catch (err) {
       console.warn(err.message);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   }
 
@@ -72,7 +72,7 @@ export const UserStorage = ({ children }) => {
 
       if (!response.ok) throw new Error(`Error: ${response.statusText}`);
       const json = await response.json();
-      window.localStorage.setItem('token', json.token);
+      window.localStorage.setItem('token', json.token); // TODO: get message
 
       const token = window.localStorage.getItem('token');
       await getUser(token);
@@ -106,7 +106,8 @@ export const UserStorage = ({ children }) => {
     try {
       setError(null);
       setLoading(true);
-      const { url, options } = POST_NEW_MESSAGE({ content }, token); // content > {content} unexpected json
+      const { url, options } = POST_NEW_MESSAGE({ content }, token);
+      // content > {content} unexpected json
       const response = await fetch(url, options);
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
@@ -151,17 +152,16 @@ export const UserStorage = ({ children }) => {
     try {
       setError(null);
       setLoading(true);
-        const token = window.localStorage.getItem('token');
-        const { url, options } = GET_ALL_MESSAGES_BY_USER(token);
-        const response = await fetch(url, options);
-       if (!response.ok) throw new Error(`Error: ${response.statusText}`);
-       const json = await response.json();
-       setMessagesByUser(json);
-
+      const token = window.localStorage.getItem('token');
+      const { url, options } = GET_ALL_MESSAGES_BY_USER(token);
+      const response = await fetch(url, options);
+      if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+      const json = await response.json();
+      setMessagesByUser(json);
     } catch (err) {
       console.log(err);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   }
 
@@ -177,13 +177,17 @@ export const UserStorage = ({ children }) => {
     } catch (err) {
       console.log(err);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   }
 
   React.useEffect(() => {
     fetchData();
-  }, []);
+
+    setTimeout(() => {
+      console.log(new Date());
+    }, 1000 * 60 * 60);
+  }, [login]);
 
   return (
     <UserContext.Provider

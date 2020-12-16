@@ -4,7 +4,7 @@ import Error from '../helpers/Error';
 
 const NewMessage = () => {
   const [content, setContent] = React.useState('');
-  const { newMessage, fetchData, error, setError } = React.useContext(
+  const { newMessage, fetchData, error, setError, login } = React.useContext(
     UserContext
   );
 
@@ -14,20 +14,29 @@ const NewMessage = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    try {
-      const token = window.localStorage.getItem('token');
-      await newMessage(content, token);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      fetchData();
-      setContent('');
+    if (!login) {
+      alert('Você precisa estar logado.');
+    } else {
+      try {
+        const token = window.localStorage.getItem('token');
+        await newMessage(content, token);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        fetchData();
+        setContent('');
+      }
     }
   };
   return (
     <div className='new-message'>
       <form onSubmit={handleSubmit}>
-        <input type='text' placeholder='Escreva aqui sua mensagem..' value={content} onChange={handleChange} />
+        <input
+          type='text'
+          placeholder='Escreva aqui sua mensagem..'
+          value={content}
+          onChange={handleChange}
+        />
         <button className='secondary' type='submit'>
           Enviar
         </button>

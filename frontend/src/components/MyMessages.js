@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
 import UserContext from '../UserContext';
 import Message from './Message';
 
 const MyMessages = () => {
-
-  const { messagesByUser,messageDataByUser, data } = React.useContext(UserContext);
+  const { messagesByUser, messageDataByUser, data } = React.useContext(
+    UserContext
+  );
 
   React.useEffect(() => {
-    messageDataByUser()
-  }, [])
+    messageDataByUser();
+  }, []);
 
   return (
-    <div className='messages'>
-      {messagesByUser &&
+    <div style={{ marginTop: '4px' }} className='messages'>
+      {(messagesByUser &&
         messagesByUser.map(d => (
           <Message
             key={d._id}
@@ -22,9 +23,9 @@ const MyMessages = () => {
             messageUserId={d.name._id}
             userId={data && data._id}
           />
-        ))}
+        ))) || <p>user has no message</p>}
     </div>
-  )
-}
+  );
+};
 
-export default MyMessages
+export default MyMessages;

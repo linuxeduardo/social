@@ -7,7 +7,8 @@ import UserContext from '../UserContext';
 import Error from '../helpers/Error';
 import { PUT_UPDATE_USER } from '../api/api';
 import avatar from '../assets/av.jpg';
-import faker from 'faker'
+import faker from 'faker';
+
 const Profile = () => {
   const email = useForm();
   const name = useForm();
@@ -44,7 +45,9 @@ const Profile = () => {
         <div className='profile-data'>
           <div className='profile-data--item'>
             <label htmlFor=''>avatar</label>
-            <p><img className='avatar' src={avatar} alt='user avatar'/></p>
+            <p>
+              <img className='avatar' src={avatar} alt='user avatar' />
+            </p>
           </div>
           <div className='profile-data--item'>
             <label htmlFor=''>username</label>
@@ -56,11 +59,11 @@ const Profile = () => {
           </div>
           <div className='profile-data--item'>
             <label htmlFor=''>Last Name</label>
-            <p>{faker.name.lastName()}</p>
+            {/* <p>{faker.name.lastName()}</p> */}
           </div>
           <div className='profile-data--item'>
             <label htmlFor=''>Birthdate</label>
-            <p>{String(faker.date.past().toLocaleDateString('en-US'))}</p>
+            {/* <p>{String(faker.date.past().toLocaleDateString('en-US'))}</p> */}
           </div>
         </div>
       </div>
