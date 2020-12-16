@@ -143,7 +143,6 @@ export function DELETE_MESSAGE(id, token) {
 }
 // - -- -- - - send new reply
 export function POST_NEW_REPLY(reply, messageId, token) {
-  console.log(reply, messageId, token);
   return {
     url: `${API_URL}/api/reply/${messageId}`,
     options: {

@@ -44,17 +44,18 @@ export const UserStorage = ({ children }) => {
 
   // - - - - - - - - - - - register - - - - - - - - - - - - -
   async function userRegister(name, email, password) {
+    let json = '';
     try {
       setError(null);
       setLoading(true);
 
       const { url, options } = POST_NEW_USER({ name, email, password });
       const response = await fetch(url, options);
-
+      json = response.json();
       await response.json();
       navigate.push('/login');
     } catch (err) {
-      setError(err.message);
+      setError(json.message);
       setLogin(false);
       console.warn(err.message);
     } finally {
@@ -102,22 +103,21 @@ export const UserStorage = ({ children }) => {
 
   // - - - - - - - - - - - new message - - - - - - - - - - - - -
   async function newMessage(content, token) {
-    let json;
+    let json = '';
     try {
       setError(null);
       setLoading(true);
       const { url, options } = POST_NEW_MESSAGE({ content }, token);
       // content > {content} unexpected json
       const response = await fetch(url, options);
+      json = await response.json();
+      // -----------------////
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
       }
-      json = await response.json();
-      console.log(json.message);
       // FIXME: get message from node
     } catch (err) {
-      console.log(json.message);
-      setError(err.message);
+      setError(json.message);
       setLogin(false);
       // FIXME: re login
     } finally {
@@ -127,6 +127,7 @@ export const UserStorage = ({ children }) => {
   // - - - - - - - - - - - auto login - - - - - - - - - - - - -
   React.useEffect(() => {
     async function autoLogin() {
+      let json = '';
       const token = window.localStorage.getItem('token');
       if (token) {
         try {
@@ -135,10 +136,11 @@ export const UserStorage = ({ children }) => {
 
           const { url, options } = POST_VALIDATE_TOKEN(token);
           const response = await fetch(url, options);
+          json = await response.json();
           if (!response.ok) throw new Error('Token inválido.');
           await getUser(token);
         } catch (err) {
-          console.log(err);
+          setError(json.message);
           userLogout();
         } finally {
           setLoading(false);
@@ -149,33 +151,37 @@ export const UserStorage = ({ children }) => {
   }, [userLogout]);
 
   async function messageDataByUser() {
+    let json = '';
     try {
       setError(null);
       setLoading(true);
+
       const token = window.localStorage.getItem('token');
       const { url, options } = GET_ALL_MESSAGES_BY_USER(token);
       const response = await fetch(url, options);
+      json = await response.json();
+
       if (!response.ok) throw new Error(`Error: ${response.statusText}`);
-      const json = await response.json();
       setMessagesByUser(json);
     } catch (err) {
-      console.log(err);
+      setError(json.message);
     } finally {
       setLoading(false);
     }
   }
 
   async function fetchData() {
+    let json = '';
     try {
       setError(null);
       setLoading(true);
       const { url, options } = GET_ALL_MESSAGES();
       const response = await fetch(url, options);
       if (!response.ok) throw new Error(`Error: ${response.statusText}`);
-      const json = await response.json();
+      json = await response.json();
       setMessageData(json);
     } catch (err) {
-      console.log(err);
+      setError(json.message);
     } finally {
       setLoading(false);
     }
@@ -195,7 +201,6 @@ export const UserStorage = ({ children }) => {
         getUser,
         userRegister,
         userLogin,
-        setError,
         error,
         loading,
         login,

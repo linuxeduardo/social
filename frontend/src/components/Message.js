@@ -4,7 +4,14 @@ import UserContext from '../UserContext';
 import Reply from './Reply';
 import '../css/message.css';
 
-const Messages = ({ content, username, messageId, userId, messageUserId }) => {
+const Message = ({
+  content,
+  username,
+  messageId,
+  userId,
+  messageUserId,
+  replies
+}) => {
   const { fetchData, login } = React.useContext(UserContext);
   const [show, setShow] = React.useState('none');
 
@@ -58,9 +65,9 @@ const Messages = ({ content, username, messageId, userId, messageUserId }) => {
           </div>
         </div>
       </div>
-      <Reply messageId={messageId} show={show} />
+      <Reply messageId={messageId} show={show} replies={replies} />
     </>
   );
 };
 
-export default Messages;
+export default Message;

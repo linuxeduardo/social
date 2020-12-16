@@ -24,7 +24,7 @@ userSchema.methods.generateAuthToken = function () {
     { _id: this._id, isAdmin: this.isAdmin, name: this.name },
     config.get('jwtPrivateKey'),
     {
-      expiresIn: '25m'
+      expiresIn: '1d'
     }
   );
 };

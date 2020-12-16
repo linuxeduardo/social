@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
-const { Message, validate } = require('../models/message');
 const auth = require('../middleware/auth');
-const admin = require('../middleware/admin');
 const validateObjectId = require('../middleware/validateObjectId');
 const owner = require('../middleware/owner');
+const { Message, validate } = require('../models/message');
+const { Reply } = require('../models/reply');
 
 /* GET messages */
 router.get('/', async (req, res) => {
   const messages = await Message.find()
     .populate('name', 'name')
     .sort([['createdAt', -1]]);
+
   res.send(messages);
 });
 
@@ -24,8 +24,8 @@ router.get('/:id', validateObjectId, async (req, res) => {
 
 /* GET by userID */
 router.get('/my/messages', auth, async (req, res) => {
-  const message = await Message.find({name: req.user._id})
-    .populate('name', 'name')
+  const message = await Message.find({ name: req.user._id })
+    .populate('name', { name: 1, content: 1 })
     .sort([['createdAt', -1]]);
   if (!message) return res.status(404).send('Mensagem não encontrada.');
   res.send(message);

@@ -4,10 +4,7 @@ import Error from '../helpers/Error';
 
 const NewMessage = () => {
   const [content, setContent] = React.useState('');
-  const { newMessage, fetchData, error, setError, login } = React.useContext(
-    UserContext
-  );
-
+  const { newMessage, fetchData, error, login } = React.useContext(UserContext);
   const handleChange = e => {
     setContent(e.target.value);
   };
@@ -21,13 +18,14 @@ const NewMessage = () => {
         const token = window.localStorage.getItem('token');
         await newMessage(content, token);
       } catch (err) {
-        setError(err.message);
+        console.warn(err);
       } finally {
         fetchData();
         setContent('');
       }
     }
   };
+
   return (
     <div className='new-message'>
       <form onSubmit={handleSubmit}>
@@ -40,6 +38,7 @@ const NewMessage = () => {
         <button className='secondary' type='submit'>
           Enviar
         </button>
+
         {error && (
           <div className='error'>
             <Error error={error} />

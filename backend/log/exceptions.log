@@ -1526,3 +1526,131 @@ TypeError: Cannot read property 'replies' of null
 TypeError: Cannot read property 'replies' of null
     at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:25:11
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T14:45:50.396Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T14:45:50.396Z [messa::backend] error: uncaughtException: jwt expired
+TokenExpiredError: jwt expired
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\auth.js:32:23
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T14:59:09.376Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+CastError: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+    at model.Query.exec (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4358:21)
+    at model.Query.Query.then (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4450:15)
+2020-12-16T14:59:09.376Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+CastError: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+    at model.Query.exec (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4358:21)
+    at model.Query.Query.then (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4450:15)
+2020-12-16T14:59:54.907Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+CastError: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+    at model.Query.exec (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4358:21)
+    at model.Query.Query.then (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4450:15)
+2020-12-16T14:59:54.907Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+CastError: Cast to ObjectId failed for value "testando" at path "_id" for model "Message"
+    at model.Query.exec (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4358:21)
+    at model.Query.Query.then (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4450:15)
+2020-12-16T15:03:45.478Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "respondendo" at path "replies"
+CastError: Cast to ObjectId failed for value "respondendo" at path "replies"
+    at ObjectId.cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schema\objectid.js:269:11)
+    at ObjectId.SchemaType.applySetters (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schematype.js:1075:12)
+    at CoreMongooseArray._cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:259:43)
+    at CoreMongooseArray._mapCast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:272:17)
+    at Arguments.map (<anonymous>)
+    at CoreMongooseArray.push (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:670:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:25:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T15:03:45.478Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "respondendo" at path "replies"
+CastError: Cast to ObjectId failed for value "respondendo" at path "replies"
+    at ObjectId.cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schema\objectid.js:269:11)
+    at ObjectId.SchemaType.applySetters (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schematype.js:1075:12)
+    at CoreMongooseArray._cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:259:43)
+    at CoreMongooseArray._mapCast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:272:17)
+    at Arguments.map (<anonymous>)
+    at CoreMongooseArray.push (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:670:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:25:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T15:04:09.233Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "[ 5fda21e93b868b1728e96eed, 'respondendo' ]" at path "replies"
+CastError: Cast to ObjectId failed for value "[ 5fda21e93b868b1728e96eed, 'respondendo' ]" at path "replies"
+    at ObjectId.cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schema\objectid.js:269:11)
+    at ObjectId.SchemaType.applySetters (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schematype.js:1075:12)
+    at CoreMongooseArray._cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:259:43)
+    at CoreMongooseArray._mapCast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:272:17)
+    at Arguments.map (<anonymous>)
+    at CoreMongooseArray.push (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:670:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:24:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T15:04:09.233Z [messa::backend] error: uncaughtException: Cast to ObjectId failed for value "[ 5fda21e93b868b1728e96eed, 'respondendo' ]" at path "replies"
+CastError: Cast to ObjectId failed for value "[ 5fda21e93b868b1728e96eed, 'respondendo' ]" at path "replies"
+    at ObjectId.cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schema\objectid.js:269:11)
+    at ObjectId.SchemaType.applySetters (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\schematype.js:1075:12)
+    at CoreMongooseArray._cast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:259:43)
+    at CoreMongooseArray._mapCast (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:272:17)
+    at Arguments.map (<anonymous>)
+    at CoreMongooseArray.push (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\types\core_array.js:670:21)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:24:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T15:21:59.040Z [messa::backend] error: uncaughtException: utils.populate: invalid path. Expected string. Got typeof `object`
+TypeError: utils.populate: invalid path. Expected string. Got typeof `object`
+    at populate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\utils.js:519:11)
+    at model.Query.Query.populate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4635:30)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:28:6
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+2020-12-16T15:21:59.040Z [messa::backend] error: uncaughtException: utils.populate: invalid path. Expected string. Got typeof `object`
+TypeError: utils.populate: invalid path. Expected string. Got typeof `object`
+    at populate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\utils.js:519:11)
+    at model.Query.Query.populate (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\mongoose\lib\query.js:4635:30)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\message.js:28:6
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at module.exports (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\middleware\auth.js:11:5)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)

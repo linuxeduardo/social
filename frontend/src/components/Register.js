@@ -16,15 +16,11 @@ const Register = () => {
   const country = useForm();
 
   /* eslint-disable-next-line */
-  const { error, loading, login, setError, userRegister } = React.useContext(
-    UserContext
-  );
+  const { error, loading, login, userRegister } = React.useContext(UserContext);
 
   const handleSubmit = async e => {
     e.preventDefault();
     if (name.validate() && email.validate() && password.validate()) {
-      setError(null);
-
       userRegister(name.value, email.value, password.value);
     }
   };
