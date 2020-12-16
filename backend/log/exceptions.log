@@ -1510,3 +1510,19 @@ TokenExpiredError: jwt expired
     at Layer.handle [as handle_request] (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\layer.js:95:5)
     at trim_prefix (G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:317:13)
     at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\node_modules\express\lib\router\index.js:284:7
+2020-12-16T14:36:01.356Z [messa::backend] error: uncaughtException: Cannot read property 'replies' of null
+TypeError: Cannot read property 'replies' of null
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:25:11
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T14:36:01.356Z [messa::backend] error: uncaughtException: Cannot read property 'replies' of null
+TypeError: Cannot read property 'replies' of null
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:25:11
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T14:36:50.352Z [messa::backend] error: uncaughtException: Cannot read property 'replies' of null
+TypeError: Cannot read property 'replies' of null
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:25:11
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-12-16T14:36:50.352Z [messa::backend] error: uncaughtException: Cannot read property 'replies' of null
+TypeError: Cannot read property 'replies' of null
+    at G:\_backup_jogos\WEBDESIGNER\projects\018Mess\backend\routes\reply.js:25:11
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

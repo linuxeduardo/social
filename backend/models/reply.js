@@ -7,7 +7,7 @@ const Reply = mongoose.model(
     content: { type: String, required: true, minlength: 3, maxlength: 255 },
     createdAt: { type: Date, default: Date.now, once: true },
     updatedAt: { type: Date, default: Date.now },
-    userId: { type: String, required: true }
+    userId: { type: String }
   })
 );
 

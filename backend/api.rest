@@ -59,7 +59,7 @@ GET http://localhost:4000/api/messages/5fc00f5b221fee28f016ddd1 HTTP/1.1
 
 ### new message auth
 POST http://localhost:4000/api/messages HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNmZTM2ZDlhY2JlNjE2MDA0Y2Y1YjYiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjA3NjMxMTgwLCJleHAiOjE2MDc2MzIwODB9.r3ykgTUZVUl1tY1eElL0918h2OhRhx947oRBQeqQPCY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmQ5ZmRmZjE0ODJlZDQ0YWM5ZDUyYzkiLCJpc0FkbWluIjpmYWxzZSwibmFtZSI6IkxFSUdIIiwiaWF0IjoxNjA4MTI4MzcwLCJleHAiOjE2MDgxMjk4NzB9.oZZJ8l3VczYavRviTYvrkm3AaRJX5N_jcLlOuJCwQnk
 content-type: application/json
 
 {
@@ -94,12 +94,12 @@ GET http://localhost:4000/api/reply HTTP/1.1
 
 ###
 
-POST http://localhost:4000/api/reply/5fbedeb54f4d6e3a8848cce2 HTTP/1.1
+POST http://localhost:4000/api/reply/5fda1b28d3d38a2884bdfdb4 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmQ5ZmRmZjE0ODJlZDQ0YWM5ZDUyYzkiLCJpc0FkbWluIjpmYWxzZSwibmFtZSI6IkxFSUdIIiwiaWF0IjoxNjA4MTI4MzcwLCJleHAiOjE2MDgxMjk4NzB9.oZZJ8l3VczYavRviTYvrkm3AaRJX5N_jcLlOuJCwQnk
 content-type: application/json
 
 {
-    "content": "replies HERE 2 !!",
-    "userId":"5fcacbea351fdc30943aca76"
+    "content": "replies HERE 3 !!"
 }
 
 ###

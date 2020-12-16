@@ -2,6 +2,10 @@
   display: none;
   transition: 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.reply form textarea {
+  padding: 4px;
+  font-size: 1.1rem;
+}
 textarea {
   width: 100%;
   resize: vertical;
